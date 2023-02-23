@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <div class>
+        <div>
+            <a href="#" id="viewHighScore" style="font-size: 25px">View High Scores</a>
+        </div>
+        <div id="timer">
+        <div class="timer" style="font-size: 35px;">Time:<span id="timeLeft">0</span></div>
+        </div>
+        <div id="timesUp" style="font-size: 32px; text-align: center; color: red">You're out of time!</div>
+        </div>
+        <div id="everything">
+              <header>
+                  <div id="start">
+                      <h1>Coding Quiz Challenge</h1>
+                      <p>Hello! Test your knowledge on JavaScript fundamentals!  Answer the following questions within 60 seconds. Answer carefully... incorrect answers will subtract time from your game clock!</p>
+                      <button type="button" id="start-quiz-button" class="btn" button style="position:relative; left: 45%; font-size: 20px;">Start Quiz</button>
+                  </div>
+                  <div id="questionDiv" style="display: none;">
+                    <p id="questionTitle"></p>
+                    <div class>
+                        <p><button id="btn0" class="btn" style="font-size: 20px"></button></p>
+                        <p><button id="btn1" class="btn" style="font-size: 20px"></button></p>
+                        <p><button id="btn2" class="btn" style="font-size: 20px"></button></p>
+                        <p><button id="btn3" class="btn" style="font-size: 20px"></button></p>
+                        <hr id="lineBreak" style="display: none;">
+                        <p id="answerCheck" style="display: none;"></p>
+                    </div>
+                  </div>
+                    <div class="justify-content-center font-weight-bold" id="summary" style="display: none;">
+                            <h2 class="font-weight-bold">Final Score Is: <span id="finalScore"></span> !</h2>
+                            <form>
+                                <p>Enter your initials: <input id="initialInput" class="form-control" style="font-size: 20px" type="text">
+                                <button type="submit" id="submitInitialBtn" class="btn" style="font-size: 20px;">Submit</button>
+                                </p>
+                            </form>
+                        </div>
+                </div>
+                <div id="highScoreSection" class="justify-center; bold" style="display: none;">
+                    <h2>High Scores</h2>                   
+                    <div id="listOfHighScores"></div>
+                    <p>
+                        <button type="submit" class="btn" id="goBackBtn" style="font-size: 20px";>Back</button>
+                        <button type="submit" class="btn" id="clearHighScoreBtn" style="font-size: 20px";>Clear Scores</button>
+                    </p>
+                </div>
+              </header>
+        </div>
+    </div>
+      <script src="./Assets/script.js"></script>
+</body>
+</html>
